@@ -1,0 +1,42 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.hero {
+  background-image: url("Images/mypic.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+body {
+  background-color: #f8f9fa;
+  padding-top: 20px;
+  align-items: center;
+}
+/* .container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.container2 {
+  width: 90%;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px 4px rgba(9, 9, 9, 0.1);
+  margin: auto;
+  padding: 10px;
+}

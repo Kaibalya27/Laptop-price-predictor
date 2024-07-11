@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">&#128187;Laptop Price Predictor</a>
+      <br />
+      <br />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark"
+              href="https://github.com/Kaibalya27/Laptop-price-predictor"
+              >Source Code</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contributors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-6 text-right">
+            <h1 class="display-4 text-dark">Estimate Your Choices</h1>
+            <p class="lead text-dark display-5">
+              Have a look at laptops that suits your expectations
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <div class="container2">
+      <h2 class="text-center">Enter Your Preferences</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Company">Company</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Company"
+              placeholder="Enter company name"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="TypeName">Type Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="TypeName"
+              placeholder="Enter type name"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Inches">Inches</label>
+            <input
+              type="number"
+              class="form-control"
+              id="Inches"
+              placeholder="Enter screen size in inches"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="ScreenResolution">Screen Resolution</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ScreenResolution"
+              placeholder="Enter screen resolution"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Ram">Ram (GB)</label>
+            <input
+              type="number"
+              class="form-control"
+              id="Ram"
+              placeholder="Enter RAM size"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Weight">Weight (kg)</label>
+            <input
+              type="number"
+              class="form-control"
+              id="Weight"
+              placeholder="Enter weight"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Touchscreen">Touchscreen</label>
+            <select id="Touchscreen" class="form-control">
+              <option value="" selected>Choose...</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="IPS">IPS</label>
+            <select id="IPS" class="form-control">
+              <option value="" selected>Choose...</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="Cpu_brand">CPU Brand</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Cpu_brand"
+              placeholder="Enter CPU brand"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="HDD">HDD (GB)</label>
+            <input
+              type="number"
+              class="form-control"
+              id="HDD"
+              placeholder="Enter HDD size"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="SSD">SSD (GB)</label>
+            <input
+              type="number"
+              class="form-control"
+              id="SSD"
+              placeholder="Enter SSD size"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Gpu_brand">GPU Brand</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Gpu_brand"
+              placeholder="Enter GPU brand"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="os">Operating System</label>
+          <input
+            type="text"
+            class="form-control"
+            id="os"
+            placeholder="Enter operating system"
+          />
+        </div>
+        <div class="form-group">
+          <label for="Price">Price</label>
+          <input
+            type="number"
+            class="form-control"
+            id="Price"
+            placeholder="Enter price"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Predict Price
+        </button>
+      </form>
+    </div>
+    <br />
+    <br />
+    <h2>Contributors</h2>
+    <br />
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <div class="col mb-4">
+        <div class="card">
+          <img src="Images/dp3.jpg" class="card-img-top" alt="Card Image" />
+          <div class="card-body">
+            <h5 class="card-title">Priyansu Pattanayak</h5>
+            <p class="card-text">
+              Developed all of frontend and integrated backend to show expected
+              output.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">ITER, Sikhsha 'O' Anushandhan</li>
+            <li class="list-group-item">Web Developement,Java</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body">
+            <a href="https://github.com/mavricx" class="card-link">Github</a>
+            <a
+              href="https://www.linkedin.com/in/priyanshu-pattanayak/"
+              class="card-link"
+              >Linkedln</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the above structure for the remaining three cards -->
+      <div class="col mb-4">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="Card Image" />
+          <div class="card-body">
+            <h5 class="card-title">Kaibalya Mohapatra</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              aut!
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">ITER, Sikhsha 'O' Anushandhan</li>
+            <li class="list-group-item">Photography</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body">
+            <a href="https://github.com/Kaibalya27" class="card-link">Github</a>
+            <a
+              href="https://www.linkedin.com/in/kaibalyamohapatra/"
+              class="card-link"
+              >Linkedln</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for Card 3 and Card 4 -->
+      <div class="col mb-4">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="Card Image" />
+          <div class="card-body">
+            <h5 class="card-title">Shaurav</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              quos.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">ITER, Sikhsha 'O' Anushandhan</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Github</a>
+            <a href="#" class="card-link">Linkedln</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="Card Image" />
+          <div class="card-body">
+            <h5 class="card-title">Shreya</h5>
+            <p class="card-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatum, aliquid!.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">ITER, Sikhsha 'O' Anushandhan</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Github</a>
+            <a href="#" class="card-link">Linkedln</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

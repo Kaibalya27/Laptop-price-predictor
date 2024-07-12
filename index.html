@@ -40,10 +40,7 @@
             <a class="nav-link text-dark" href="#">Contributors</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Contact</a>
+            <a class="nav-link text-dark" href="#">About This Project</a>
           </li>
         </ul>
       </div>
@@ -70,21 +67,40 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="Company">Company</label>
-            <input
-              type="text"
-              class="form-control"
-              id="Company"
-              placeholder="Enter company name"
-            />
+            <select id="Company" class="form-control">
+              <option value="" selected>Choose Laptop Company</option>
+              <option value="">Dell</option>
+              <option value="">Lenovo</option>
+              <option value="">HP</option>
+              <option value="">Asus</option>
+              <option value="">Acer</option>
+              <option value="">MSI</option>
+              <option value="">Toshiba</option>
+              <option value="">Apple</option>
+              <option value="">Samsung</option>
+              <option value="">Mediacom</option>
+              <option value="">Razor</option>
+              <option value="">Microsoft</option>
+              <option value="">Vero</option>
+              <option value="">Xiaomi</option>
+              <option value="">Chuwi</option>
+              <option value="">Fujitsu</option>
+              <option value="">Google</option>
+              <option value="">LG</option>
+              <option value="">Huawei</option>
+            </select>
           </div>
           <div class="form-group col-md-6">
-            <label for="TypeName">Type Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="TypeName"
-              placeholder="Enter type name"
-            />
+            <label for="TypeName">Laptop Type</label>
+            <select id="TypeName" class="form-control">
+              <option value="" selected>Choose Laptop Type</option>
+              <option value="">Notebook</option>
+              <option value="">Gaming</option>
+              <option value="">Ultrabook</option>
+              <option value="">2 in 1 Convertible</option>
+              <option value="">Workstation</option>
+              <option value="">Netbook</option>
+            </select>
           </div>
         </div>
         <div class="form-row">
@@ -99,23 +115,35 @@
           </div>
           <div class="form-group col-md-6">
             <label for="ScreenResolution">Screen Resolution</label>
-            <input
-              type="text"
-              class="form-control"
-              id="ScreenResolution"
-              placeholder="Enter screen resolution"
-            />
+            <select id="ScreenResolution" class="form-control">
+              <option value="" selected>Select Screen Resolution</option>
+              <option value="">1920x1080</option>
+              <option value="">1366x768</option>
+              <option value="">1600x900</option>
+              <option value="">3840x2160</option>
+              <option value="">3200x1800</option>
+              <option value="">2880x1800</option>
+              <option value="">2560x1600</option>
+              <option value="">2560x1440</option>
+              <option value="">2304x1440</option>
+            </select>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="Ram">Ram (GB)</label>
-            <input
-              type="number"
-              class="form-control"
-              id="Ram"
-              placeholder="Enter RAM size"
-            />
+            <select id="Ram" class="form-control">
+              <option value="" selected>Select Ram Size</option>
+              <option value="">2</option>
+              <option value="">4</option>
+              <option value="">6</option>
+              <option value="">8</option>
+              <option value="">12</option>
+              <option value="">16</option>
+              <option value="">24</option>
+              <option value="">32</option>
+              <option value="">64</option>
+            </select>
           </div>
           <div class="form-group col-md-6">
             <label for="Weight">Weight (kg)</label>
@@ -148,61 +176,60 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="Cpu_brand">CPU Brand</label>
-            <input
-              type="text"
-              class="form-control"
-              id="Cpu_brand"
-              placeholder="Enter CPU brand"
-            />
+            <select id="Cpu_brand" class="form-control">
+              <option value="" selected>Select CPU Brand</option>
+              <option value="">Intel Core i7</option>
+              <option value="">Intel Core i5</option>
+              <option value="">Other Intel Processor</option>
+              <option value="">Intel Core i3</option>
+              <option value="">AMD Processor</option>
+            </select>
           </div>
           <div class="form-group col-md-6">
             <label for="HDD">HDD (GB)</label>
-            <input
-              type="number"
-              class="form-control"
-              id="HDD"
-              placeholder="Enter HDD size"
-            />
+            <select id="HHD" class="form-control">
+              <option value="" selected>Select HDD Size(In GB)</option>
+              <option value="">0</option>
+              <option value="">128</option>
+              <option value="">256</option>
+              <option value="">512</option>
+              <option value="">1024</option>
+              <option value="">2048</option>
+            </select>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="SSD">SSD (GB)</label>
-            <input
-              type="number"
-              class="form-control"
-              id="SSD"
-              placeholder="Enter SSD size"
-            />
+            <select id="SSD" class="form-control">
+              <option value="" selected>Select SSD Size(In GB)</option>
+              <option value="">0</option>
+              <option value="">8</option>
+              <option value="">128</option>
+              <option value="">256</option>
+              <option value="">512</option>
+              <option value="">1024</option>
+              
+            </select>
           </div>
           <div class="form-group col-md-6">
-            <label for="Gpu_brand">GPU Brand</label>
-            <input
-              type="text"
-              class="form-control"
-              id="Gpu_brand"
-              placeholder="Enter GPU brand"
-            />
+            <label for="Gpu brand">GPU Brand</label>
+            <select id="Gpu brand" class="form-control">
+              <option value="" selected>Select Gpu Brand</option>
+              <option value="">Intel</option>
+              <option value="">Nvidia</option>
+              <option value="">AMD</option>
+            </select>
           </div>
         </div>
         <div class="form-group">
           <label for="os">Operating System</label>
-          <input
-            type="text"
-            class="form-control"
-            id="os"
-            placeholder="Enter operating system"
-          />
-        </div>
-        <div class="form-group">
-          <label for="Price">Price</label>
-          <input
-            type="number"
-            class="form-control"
-            id="Price"
-            placeholder="Enter price"
-          />
-        </div>
+          <select id="os" class="form-control">
+            <option value="" selected>Select Operating System</option>
+            <option value="">Windows</option>
+            <option value="">Linux/No Os/Others</option>
+            <option value="">Mac</option>
+          </select>
         <button type="submit" class="btn btn-primary btn-block">
           Predict Price
         </button>
@@ -220,8 +247,7 @@
           <div class="card-body">
             <h5 class="card-title">Priyansu Pattanayak</h5>
             <p class="card-text">
-              Developed all of frontend and integrated backend to show expected
-              output.
+              Aspiring Developer,Contibuted developing Frontend
             </p>
           </div>
           <ul class="list-group list-group-flush">
@@ -246,9 +272,7 @@
           <div class="card-body">
             <h5 class="card-title">Kaibalya Mohapatra</h5>
             <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-              aut!
-            </p>
+              Ai,Ml and Data Science enthusiast</p>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">ITER, Sikhsha 'O' Anushandhan</li>

@@ -15,6 +15,7 @@ document.getElementById('predict-form').addEventListener('submit', async (event)
         body: JSON.stringify([data]),  // Send data as an array
     });
 
+    
     const result = await response.json();
     document.getElementById('prediction-result').innerText = "The predicted price of this configuration is ${result.predicted_price}";
 });

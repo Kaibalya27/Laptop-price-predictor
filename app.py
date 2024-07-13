@@ -1,6 +1,7 @@
-from flask import Flask, request, jsonify
+from flask import Flask, redirect, request, jsonify,render_template, url_for
 import pickle
 import pandas as pd
+import numpy as np
 from sklearn.base import TransformerMixin, BaseEstimator
 
 # Define the custom transformer
@@ -25,14 +26,33 @@ df = pickle.load(open('df.pkl', 'rb'))
 
 # Initialize the Flask app
 app = Flask(__name__)
+@app.route('/')
+def welcome():
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    data = request.json
-    query_df = pd.DataFrame(data)
+    Company=request.form['Company']
+    Inches=request.form['Inches']
+    ScreenResolution=request.form['ScreenResolution']
+    TypeName=request.form['TypeName']
+    HDD=request.form['HDD']
+    Ram=request.form['RAM']
+    Gpu_brand=request.form['GPU_Brand']
+    SSD=request.form['SSD']
+    Weight=request.form['Weight']
+    Touchscreen=request.form['Touchscreen']
+    IPS=request.form['IPS']
+    Cpu_brand=request.form['CPU_Brand']
+    os=request.form['os']
+
+    query_df = pd.DataFrame({'Company':[Company],'TypeName':[TypeName],'Inches':[Inches],'ScreenResolution':[ScreenResolution],'Ram':[Ram],'Weight':[Weight],'Touchscreen':[Touchscreen],'IPS':[IPS],'Cpu_brand':[Cpu_brand],'HDD':[HDD],'SSD':[SSD],'Gpu_brand':[Gpu_brand],'os':[os]})
+    print(query_df)
     prediction = pipe.predict(query_df)
     predicted_price = int(np.exp(prediction[0]))
-    return jsonify({'predicted_price': predicted_price})
+    # return "the result is"+predicted_price
+    return render_template('index.html', result=predicted_price)
+    
 
 if __name__ == '__main__':
     app.run(debug=True)

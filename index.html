@@ -63,43 +63,43 @@
     <br />
     <div class="container2">
       <h2 class="text-center">Enter Your Preferences</h2>
-      <form>
+      <form id="predict-form" action="/submit" method="post">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="Company">Company</label>
             <select id="Company" class="form-control">
               <option value="" selected>Choose Laptop Company</option>
-              <option value="">Dell</option>
-              <option value="">Lenovo</option>
-              <option value="">HP</option>
-              <option value="">Asus</option>
-              <option value="">Acer</option>
-              <option value="">MSI</option>
-              <option value="">Toshiba</option>
-              <option value="">Apple</option>
-              <option value="">Samsung</option>
-              <option value="">Mediacom</option>
-              <option value="">Razor</option>
-              <option value="">Microsoft</option>
-              <option value="">Vero</option>
-              <option value="">Xiaomi</option>
-              <option value="">Chuwi</option>
-              <option value="">Fujitsu</option>
-              <option value="">Google</option>
-              <option value="">LG</option>
-              <option value="">Huawei</option>
+              <option value="Dell">Dell</option>
+              <option value="Lenovo">Lenovo</option>
+              <option value="HP">HP</option>
+              <option value="Asus">Asus</option>
+              <option value="Acer">Acer</option>
+              <option value="MSI">MSI</option>
+              <option value="Toshiba">Toshiba</option>
+              <option value="Apple">Apple</option>
+              <option value="Samsung">Samsung</option>
+              <option value="Mediacom">Mediacom</option>
+              <option value="Razor">Razor</option>
+              <option value="Micrsoft">Microsoft</option>
+              <option value="Vero">Vero</option>
+              <option value="Xiaomi">Xiaomi</option>
+              <option value="Chuwi">Chuwi</option>
+              <option value="Fujitsu">Fujitsu</option>
+              <option value="Google">Google</option>
+              <option value="LG">LG</option>
+              <option value="Huawei">Huawei</option>
             </select>
           </div>
           <div class="form-group col-md-6">
             <label for="TypeName">Laptop Type</label>
             <select id="TypeName" class="form-control">
               <option value="" selected>Choose Laptop Type</option>
-              <option value="">Notebook</option>
-              <option value="">Gaming</option>
-              <option value="">Ultrabook</option>
-              <option value="">2 in 1 Convertible</option>
-              <option value="">Workstation</option>
-              <option value="">Netbook</option>
+              <option value="Notebook">Notebook</option>
+              <option value="Gaming">Gaming</option>
+              <option value="Ultrabook">Ultrabook</option>
+              <option value="2 in 1 Convertible">2 in 1 Convertible</option>
+              <option value="Workstation">Workstation</option>
+              <option value="Netbook">Netbook</option>
             </select>
           </div>
         </div>
@@ -117,15 +117,15 @@
             <label for="ScreenResolution">Screen Resolution</label>
             <select id="ScreenResolution" class="form-control">
               <option value="" selected>Select Screen Resolution</option>
-              <option value="">1920x1080</option>
-              <option value="">1366x768</option>
-              <option value="">1600x900</option>
-              <option value="">3840x2160</option>
-              <option value="">3200x1800</option>
-              <option value="">2880x1800</option>
-              <option value="">2560x1600</option>
-              <option value="">2560x1440</option>
-              <option value="">2304x1440</option>
+              <option value="1920x1080">1920x1080</option>
+              <option value="1366x768">1366x768</option>
+              <option value="1600x900">1600x900</option>
+              <option value="3840x2160">3840x2160</option>
+              <option value="3200x1800">3200x1800</option>
+              <option value="2880x1800">2880x1800</option>
+              <option value="2560x1600">2560x1600</option>
+              <option value="2560x1440">2560x1440</option>
+              <option value="2304x1440">2304x1440</option>
             </select>
           </div>
         </div>
@@ -134,15 +134,15 @@
             <label for="Ram">Ram (GB)</label>
             <select id="Ram" class="form-control">
               <option value="" selected>Select Ram Size</option>
-              <option value="">2</option>
-              <option value="">4</option>
-              <option value="">6</option>
-              <option value="">8</option>
-              <option value="">12</option>
-              <option value="">16</option>
-              <option value="">24</option>
-              <option value="">32</option>
-              <option value="">64</option>
+              <option value="2">2</option>
+              <option value="4">4</option>
+              <option value="6">6</option>
+              <option value="8">8</option>
+              <option value="12">12</option>
+              <option value="16">16</option>
+              <option value="24">24</option>
+              <option value="32">32</option>
+              <option value="64">64</option>
             </select>
           </div>
           <div class="form-group col-md-6">
@@ -178,23 +178,23 @@
             <label for="Cpu_brand">CPU Brand</label>
             <select id="Cpu_brand" class="form-control">
               <option value="" selected>Select CPU Brand</option>
-              <option value="">Intel Core i7</option>
-              <option value="">Intel Core i5</option>
-              <option value="">Other Intel Processor</option>
-              <option value="">Intel Core i3</option>
-              <option value="">AMD Processor</option>
+              <option value="Intel Core i7">Intel Core i7</option>
+              <option value="Intel Core i5">Intel Core i5</option>
+              <option value="Other Intel Processor">Other Intel Processor</option>
+              <option value="Intel Core i3">Intel Core i3</option>
+              <option value="AMD Processor">AMD Processor</option>
             </select>
           </div>
           <div class="form-group col-md-6">
             <label for="HDD">HDD (GB)</label>
             <select id="HHD" class="form-control">
               <option value="" selected>Select HDD Size(In GB)</option>
-              <option value="">0</option>
-              <option value="">128</option>
-              <option value="">256</option>
-              <option value="">512</option>
-              <option value="">1024</option>
-              <option value="">2048</option>
+              <option value="0">0</option>
+              <option value="128">128</option>
+              <option value="256">256</option>
+              <option value="512">512</option>
+              <option value="1024">1024</option>
+              <option value="2048">2048</option>
             </select>
           </div>
         </div>
@@ -203,22 +203,22 @@
             <label for="SSD">SSD (GB)</label>
             <select id="SSD" class="form-control">
               <option value="" selected>Select SSD Size(In GB)</option>
-              <option value="">0</option>
-              <option value="">8</option>
-              <option value="">128</option>
-              <option value="">256</option>
-              <option value="">512</option>
-              <option value="">1024</option>
+              <option value="0">0</option>
+              <option value="8">8</option>
+              <option value="128">128</option>
+              <option value="256">256</option>
+              <option value="512">512</option>
+              <option value="1024">1024</option>
               
             </select>
           </div>
           <div class="form-group col-md-6">
-            <label for="Gpu brand">GPU Brand</label>
-            <select id="Gpu brand" class="form-control">
+            <label for="Gpubrand">GPU Brand</label>
+            <select id="Gpubrand" class="form-control">
               <option value="" selected>Select Gpu Brand</option>
-              <option value="">Intel</option>
-              <option value="">Nvidia</option>
-              <option value="">AMD</option>
+              <option value="Intel">Intel</option>
+              <option value="Nvidia">Nvidia</option>
+              <option value="AMD">AMD</option>
             </select>
           </div>
         </div>
@@ -226,20 +226,22 @@
           <label for="os">Operating System</label>
           <select id="os" class="form-control">
             <option value="" selected>Select Operating System</option>
-            <option value="">Windows</option>
-            <option value="">Linux/No Os/Others</option>
-            <option value="">Mac</option>
+            <option value="Windows">Windows</option>
+            <option value="Linux/No Os/Others">Linux/No Os/Others</option>
+            <option value="Mac">Mac</option>
           </select>
         <button type="submit" class="btn btn-primary btn-block">
           Predict Price
         </button>
       </form>
     </div>
+    <br>
+    <br>
+    <h2 id="prediction-result"></h2>
     <br />
     <br />
     <h2>Contributors</h2>
     <br />
-
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
       <div class="col mb-4">
         <div class="card">
@@ -260,12 +262,10 @@
             <a
               href="https://www.linkedin.com/in/priyanshu-pattanayak/"
               class="card-link"
-              >Linkedln</a
-            >
+              >Linkedln</a>
           </div>
         </div>
       </div>
-      <!-- Repeat the above structure for the remaining three cards -->
       <div class="col mb-4">
         <div class="card">
           <img src="..." class="card-img-top" alt="Card Image" />
@@ -289,7 +289,6 @@
           </div>
         </div>
       </div>
-      <!-- Repeat for Card 3 and Card 4 -->
       <div class="col mb-4">
         <div class="card">
           <img src="..." class="card-img-top" alt="Card Image" />
@@ -333,7 +332,7 @@
         </div>
       </div>
     </div>
-
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

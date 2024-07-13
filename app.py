@@ -1,52 +1,38 @@
-import streamlit as st
+from flask import Flask, request, jsonify
 import pickle
-import numpy as np
+import pandas as pd
+from sklearn.base import TransformerMixin, BaseEstimator
 
-# import the model
-pipe = pickle.load(open('pipe.pkl','rb'))
-df = pickle.load(open('df.pkl','rb'))
+# Define the custom transformer
+class ppi(TransformerMixin, BaseEstimator):
+    def fit(self, df, y=None):
+        return self
 
-st.title("Laptop Predictor")
+    def transform(self, df, y=None):
+        splitdf = df['ScreenResolution'].str.split('x', n=1, expand=True)
+        df['X_res'] = splitdf[0]
+        df['Y_res'] = splitdf[1]
+        df['X_res'] = df['X_res'].str.replace(',', '').str.findall(r'(\d+.?\d+)').apply(lambda x: x[0])
+        df['X_res'] = df['X_res'].astype('int')
+        df['Y_res'] = df['Y_res'].astype('int')
+        df['ppi'] = (((df['X_res']**2) + (df['Y_res']**2))**0.5 / (df['Inches'] + 0.0000001)).astype('float')
+        df.drop(columns=['ScreenResolution', 'Inches', 'X_res', 'Y_res'], inplace=True)
+        return df
 
-# brand
-company = st.selectbox('Brand',df['Company'].unique())
+# Load the model and data
+pipe = pickle.load(open('pipe.pkl', 'rb'))
+df = pickle.load(open('df.pkl', 'rb'))
 
-# type of laptop
-type = st.selectbox('Type',df['TypeName'].unique())
+# Initialize the Flask app
+app = Flask(__name__)
 
-# Ram
-ram = st.selectbox('RAM(in GB)',[2,4,6,8,12,16,24,32,64])
+@app.route('/predict', methods=['POST'])
+def predict():
+    data = request.json
+    query_df = pd.DataFrame(data)
+    prediction = pipe.predict(query_df)
+    predicted_price = int(np.exp(prediction[0]))
+    return jsonify({'predicted_price': predicted_price})
 
-# weight
-weight = st.number_input('Weight of the Laptop')
-
-# Touchscreen
-touchscreen = st.selectbox('Touchscreen',['No','Yes'])
-
-# IPS
-ips = st.selectbox('IPS',['No','Yes'])
-
-# screen size
-inches = st.number_input('Screen Size')
-
-# resolution
-screen_resolution = st.selectbox('Screen Resolution',['1920x1080','1366x768','1600x900','3840x2160','3200x1800','2880x1800','2560x1600','2560x1440','2304x1440'])
-
-#cpu
-cpu = st.selectbox('CPU',df['Cpu brand'].unique())
-
-hdd = st.selectbox('HDD(in GB)',[0,128,256,512,1024,2048])
-
-ssd = st.selectbox('SSD(in GB)',[0,8,128,256,512,1024])
-
-gpu = st.selectbox('GPU',df['Gpu brand'].unique())
-
-os = st.selectbox('OS',df['os'].unique())
-
-if st.button('Predict Price'):
-    # query
-
-    query = np.array([company,type,inches,screen_resolution,ram,weight,touchscreen,ips,cpu,hdd,ssd,gpu,os])
-
-    query = query.reshape(1,12)
-    st.title("The predicted price of this configuration is " + str(int(np.exp(pipe.predict(query)[0]))))
+if __name__ == '__main__':
+    app.run(debug=True)

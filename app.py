@@ -33,24 +33,24 @@ def welcome():
 @app.route('/predict', methods=['POST'])
 def predict():
     Company=request.form['Company']
-    Inches=request.form['Inches']
+    Inches=float(request.form['Inches'])
     ScreenResolution=request.form['ScreenResolution']
     TypeName=request.form['TypeName']
-    HDD=request.form['HDD']
-    Ram=request.form['RAM']
+    HDD=int(request.form['HDD'])
+    Ram=int(request.form['RAM'])
     Gpu_brand=request.form['GPU_Brand']
-    SSD=request.form['SSD']
-    Weight=request.form['Weight']
+    SSD=int(request.form['SSD'])
+    Weight=float(request.form['Weight'])
     Touchscreen=request.form['Touchscreen']
     IPS=request.form['IPS']
     Cpu_brand=request.form['CPU_Brand']
     os=request.form['os']
 
     query_df = pd.DataFrame({'Company':[Company],'TypeName':[TypeName],'Inches':[Inches],'ScreenResolution':[ScreenResolution],'Ram':[Ram],'Weight':[Weight],'Touchscreen':[Touchscreen],'IPS':[IPS],'Cpu_brand':[Cpu_brand],'HDD':[HDD],'SSD':[SSD],'Gpu_brand':[Gpu_brand],'os':[os]})
-    print(query_df)
     prediction = pipe.predict(query_df)
     predicted_price = int(np.exp(prediction[0]))
-    # return "the result is"+predicted_price
     return render_template('index.html', result=predicted_price)
     
+if __name__ == '__main__':
+    app.run(debug=True)
 

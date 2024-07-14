@@ -239,15 +239,14 @@
       </form>
     </div>
     <br>
-    <br>
     {% if result %}
         <div class="mt-5">
             <h2>Prediction Result</h2>
             <div class="alert alert-success" role="alert">
-                The predicted price of the laptop is ${{ result }}
+                The predicted price of the laptop is RS {{ result }}
             </div>
         </div>
-        {% endif %}
+    {% endif %}
     <br />
     <br />
     <h2>Contributors</h2>

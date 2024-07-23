@@ -45,6 +45,26 @@ The dataset utilized in this project is 'laptop_data.csv', which includes detail
   <img src="https://github.com/user-attachments/assets/62ebbe60-4f1f-4d4d-bbce-7be7ee192be0" alt="Alt Text" width="750" />
 </p>
 
+## Usage
+To use the laptop price predictor, follow these instructions:
+Copy the URL link provided below and paste it into your browser to access the webpage.
+```
+https://laptop-price-predictor-1-teve.onrender.com
+```
+2.Input the specifications of the laptop for which you want to estimate the price.
+3.The system will utilize the trained model to calculate and display the predicted price.
+
+## Contact
+If you have any inquiries or encounter any issues, feel free to reach out at example@email.com. Our support team is here to assist you and ensure you have a smooth experience. Don't hesitate to contact us with any concerns or feedback.
+
+
+
+
+
+
+
+
+
 
 
 

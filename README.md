@@ -41,6 +41,11 @@ The dataset utilized in this project is 'laptop_data.csv', which includes detail
 
 ## System Methodology
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/62ebbe60-4f1f-4d4d-bbce-7be7ee192be0" alt="Alt Text" width="750" />
+</p>
+
+
 
 
 

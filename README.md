@@ -14,9 +14,9 @@
 
 * The project proposes a method where the price of a laptop, the dependent variable, is forecasted based on factors such as the laptop Company,Type,Inches,Screen Resoution, RAM size, weight,storage type (HDD/SSD), GPU Brand, CPU Brand, IPS ,Operating System and whether it includes a touch screen.
 <p align="center">
-  <img src="![laptops_image](https://github.com/user-attachments/assets/0680f113-e249-461d-aa0b-2b86ee0ca59a)
-"  width="400"/>
+  <img src="https://cdn.thewirecutter.com/wp-content/media/2024/07/businesslaptops-2048px-233284-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp" alt="Example Image" width="400"/>
 </p>
+
 
 ## Problem Statement
 

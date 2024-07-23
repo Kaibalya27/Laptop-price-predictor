@@ -18,9 +18,7 @@
 </p>
 
 ## Problem Statement
-<p align="center">
-  <img src="file:///C:/Users/user/Downloads/laptops_image.webp" alt="Laptop Image" width="400"/>
-</p>
+
 
 
 

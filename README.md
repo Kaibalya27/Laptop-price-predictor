@@ -39,6 +39,9 @@ The dataset utilized in this project is 'laptop_data.csv', which includes detail
 
 **requirements.txt** is a file used to list dependencies for the project.
 
+## Technologies
+
+
 
 
 

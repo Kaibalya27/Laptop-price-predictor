@@ -8,7 +8,7 @@
 * [Usage](#usage)
 * [Contact](#contact)
 ## Introduction
-* This project introduces a system designed to predict laptop prices using supervised machine learning techniques. The study employs a random decision forest as the predictive model, achieving a precision of Lorem% in price estimation.
+* This project introduces a Web Based Appliaction system designed to predict laptop prices using supervised machine learning techniques. The study employs a random decision forest as the predictive model, achieving a precision of Lorem% in price estimation.
 
 * In this approach, the random decision forest utilizes several independent variables to predict a single dependent variable: the laptop price. The model compares actual and predicted values to assess the accuracy of its predictions.
 

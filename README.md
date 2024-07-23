@@ -26,6 +26,12 @@
 ## Data Set
 The dataset utilized in this project is 'laptop_data.csv', which includes details about laptop's different features such as brand, screen size, processor, RAM, storage, and price. It comprises 1303 rows and 12 columns. The dataset underwent significant data preprocessing, feature engineering,Exploratory Data Analysis (EDA) for analysis and for machine learning it utilizes random decision forest as the predictive model. 
 
+## File Description
+**Laptop_price_prediction.ipynb** - This Jupyter notebook contains the complete code for this project including data preprocessing, EDA, feature engineering, model building, and evaluation.
+**df.pkl** - Pickle file of the processed data used in the model.
+**pipe.pkl** - Pickle file of the machine learning pipeline used in the model.
+**laptop_data.csv** - The dataset used in this project.
+
 
 
 

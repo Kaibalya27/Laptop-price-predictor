@@ -55,6 +55,7 @@ https://laptop-price-predictor-1-teve.onrender.com
 ```
 
 2.Input the specifications of the laptop for which you want to estimate the price.
+
 3.The system will utilize the trained model to calculate and display the predicted price.
 
 ## Contact

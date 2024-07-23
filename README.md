@@ -4,7 +4,7 @@
 * [Problem Statement](#problem-statement)
 * [Data Set](#data-set)
 * [File Description](#file-description)
-* [Technologies](#technologies)
+* [System Methodology](#system-methodology)
 * [Usage](#usage)
 * [Contact](#contact)
 ## Introduction
@@ -39,7 +39,8 @@ The dataset utilized in this project is 'laptop_data.csv', which includes detail
 
 **requirements.txt** is a file used to list dependencies for the project.
 
-## Technologies
+## System Methodology
+
 
 
 

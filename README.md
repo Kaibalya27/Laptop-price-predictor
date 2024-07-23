@@ -29,11 +29,19 @@ The dataset utilized in this project is 'laptop_data.csv', which includes detail
 ## File Description
 **Laptop_price_prediction.ipynb** - This Jupyter notebook contains the complete code for this project including data preprocessing, EDA, feature engineering, model building, and evaluation.
 
+**app.py** is the primary Python script that contains the main application logic.
+
 **df.pkl** - Pickle file of the processed data used in the model.
 
 **pipe.pkl** - Pickle file of the machine learning pipeline used in the model.
 
 **laptop_data.csv** - The dataset used in this project.
+
+**requirements.txt** is a file used to list dependencies for the project.
+
+
+
+
 
 
 

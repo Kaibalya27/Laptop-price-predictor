@@ -13,3 +13,4 @@
 * In this approach, the random decision forest utilizes several independent variables to predict a single dependent variable: the laptop price. The model compares actual and predicted values to assess the accuracy of its predictions.
 
 * The project proposes a method where the price of a laptop, the dependent variable, is forecasted based on factors such as the laptop Company,Type,Inches,Screen Resoution, RAM size, weight,storage type (HDD/SSD), GPU Brand, CPU Brand, IPS ,Operating System and whether it includes a touch screen.
+![Alt Laptops](C:\Users\user\Downloads\laptops_image.webp)

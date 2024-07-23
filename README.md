@@ -24,6 +24,7 @@
 </p>
 
 ## Data Set
+The dataset used in this project is 'laptop_data.csv'. It contains information about various laptops such as brand, screen size, processor, RAM, storage, and price. The dataset has 1300 rows and 11 columns. The dataset required extensive data preprocessing, feature engineering, and one-hot encoding.
 
 
 

@@ -76,7 +76,7 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="Company">Company</label>
-            <select id="Company" name='Company' class="form-control">
+            <select id="Company" name='Company' class="form-control" required>
               <option value="" selected>Choose Laptop Company</option>
               <option value="Dell">Dell</option>
               <option value="Lenovo">Lenovo</option>
@@ -101,7 +101,7 @@
           </div>
           <div class="form-group col-md-6">
             <label for="TypeName">Laptop Type</label>
-            <select id="TypeName" name="TypeName" class="form-control">
+            <select id="TypeName" name="TypeName" class="form-control" required>
               <option value="" selected>Choose Laptop Type</option>
               <option value="Notebook">Notebook</option>
               <option value="Gaming">Gaming</option>
@@ -121,6 +121,7 @@
               id="Inches"
               name="Inches"
               placeholder="Enter screen size in inches"
+              value="0"
             />
           </div>
           <div class="form-group col-md-6">
@@ -163,6 +164,7 @@
               id="Weight"
               name="Weight"
               placeholder="Enter weight"
+              value="0"
             />
           </div>
         </div>
@@ -225,7 +227,7 @@
           </div>
           <div class="form-group col-md-6">
             <label for="GPU_Brand">GPU Brand</label>
-            <select id="GPU_Brand" name="GPU_Brand" class="form-control">
+            <select id="GPU_Brand" name="GPU_Brand" class="form-control" required>
               <option value="" selected>Select Gpu Brand</option>
               <option value="Intel">Intel</option>
               <option value="Nvidia">Nvidia</option>
@@ -246,9 +248,7 @@
           Predict Price
         </button>
       </form>
-    </div>
-    <br>
-    
+    </div>   
     <br />
     <br />
     <h2 style="text-align: center; width: 100%;">Contributors</h2>

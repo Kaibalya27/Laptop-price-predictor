@@ -60,7 +60,7 @@ https://laptop-price-predictor-1-teve.onrender.com
 3.The system will utilize the trained model to calculate and display the predicted price.
 
 ## Our Team
-If you have any inquiries or encounter any issues, feel free to reach out. Our team is here to assist you and ensure you have a smooth experience. Don't hesitate to contact us with any concerns or feedback.
+If you have any inquiries or encounter any issues, feel free to reach out. Our team is here to assist you and ensure you have a good experience. Don't hesitate to contact us with any concerns or feedback.
 
 
 ### Shreya Tripathy

@@ -62,6 +62,14 @@
     </section>
     <br />
     <br />
+    {% if result %}
+        <div class="mt-5" style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 0rem; margin-bottom: 4rem;">
+            <h2>Prediction Result</h2>
+            <div class="alert alert-success" role="alert">
+                The predicted price of the laptop is RS {{ result }}
+            </div>
+        </div>
+    {% endif %}
     <div class="container2">
       <h2 class="text-center">Enter Your Preferences</h2>
       <form id="predict-form" action="/predict" method="post">
@@ -81,7 +89,7 @@
               <option value="Samsung">Samsung</option>
               <option value="Mediacom">Mediacom</option>
               <option value="Razor">Razor</option>
-              <option value="Micrsoft">Microsoft</option>
+              <option value="Microsoft">Microsoft</option>
               <option value="Vero">Vero</option>
               <option value="Xiaomi">Xiaomi</option>
               <option value="Chuwi">Chuwi</option>
@@ -240,17 +248,10 @@
       </form>
     </div>
     <br>
-    {% if result %}
-        <div class="mt-5">
-            <h2>Prediction Result</h2>
-            <div class="alert alert-success" role="alert">
-                The predicted price of the laptop is RS {{ result }}
-            </div>
-        </div>
-    {% endif %}
+    
     <br />
     <br />
-    <h2>Contributors</h2>
+    <h2 style="text-align: center; width: 100%;">Contributors</h2>
     <br />
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 " id="contributorsTarget">
       <div class="col mb-4">
@@ -276,7 +277,49 @@
           </div>
         </div>
       </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="/static/pic2e.jpg" class="card-img-top" alt="Card Image" />
+          <div class="card-body">
+            <h5 class="card-title">Kaibalya Mohapatra</h5>
+            <p class="card-text">
+              I'm an aspiring Data Scientist passionate about AI, ML, deep learning, NLP, and computer vision. I have experience with Flask, Java, and data structures and algorithms, enabling me to create scalable solutions for complex technical challenges.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">ITER, Sikhsha 'O' Anushandhan</li>
+            <li class="list-group-item">Computer Science and Engineering</li>
+          </ul>
+          <div class="card-body">
+            <a href="https://github.com/Kaibalya27" class="card-link" target="_blank">Github</a>
+            <a
+              href="https://www.linkedin.com/in/kaibalyamohapatra/"
+              class="card-link"
+              target="_blank"
+              >LinkedIn</a>
+          </div>
+        </div>
+      </div>
       
+      <div class="col mb-4">
+        <div class="card">
+          <img src="/static/pic4e.jpg" class="card-img-top" alt="Card Image" />
+          <div class="card-body">
+            <h5 class="card-title">Shreya Tripathy</h5>
+            <p class="card-text">
+              Hello !! I am Shreya Tripathy currently pursuing BTech in Computer science engineering with Data Science Specialization in ITER SOA Bhubaneswar. I am a keen learner and enthusiast about python, data Science and Java, data structures and algorithms
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">ITER, Sikhsha 'O' Anushandhan</li>
+            <li class="list-group-item">Computer Science and Engineering</li>
+          </ul>
+          <div class="card-body">
+            <a href="https://github.com/Shreya7tripathy" class="card-link" target="_blank">Github</a>
+            <a href="http://www.linkedin.com/in/shreyatripathy7" class="card-link" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
       <div class="col mb-4">
         <div class="card">
           <img src="/static/pic3e.jpg" class="card-img-top" alt="Card Image" />
@@ -293,47 +336,6 @@
           <div class="card-body">
             <a href="https://github.com/sauravlipsit" class="card-link" target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/saurav-lipsit-parija-870828290/" class="card-link" target="_blank">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card">
-          <img src="/static/pic4e.jpg" class="card-img-top" alt="Card Image" />
-          <div class="card-body">
-            <h5 class="card-title">Shreya Tripathy</h5>
-            <p class="card-text">
-              Hello !! I am Shreya Tripathy currently pursuing BTech in Computer science engineering with Data Science Specialization in ITER SOA Bhubaneswar. I am a keen learner and enthusiast about python, data Science and Java Dsa
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">ITER, Sikhsha 'O' Anushandhan</li>
-            <li class="list-group-item">Computer Science and Engineering</li>
-          </ul>
-          <div class="card-body">
-            <a href="https://github.com/Shreya7tripathy" class="card-link" target="_blank">Github</a>
-            <a href="http://www.linkedin.com/in/shreyatripathy7" class="card-link" target="_blank">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card">
-          <img src="/static/pic2e.jpg" class="card-img-top" alt="Card Image" />
-          <div class="card-body">
-            <h5 class="card-title">Kaibalya Mohapatra</h5>
-            <p class="card-text">
-              I am an aspiring Data Scientist with a passion for artificial intelligence (AI) and machine learning (ML). I have a solid foundation in deep learning (DL), natural language processing (NLP), and computer vision (CV). In addition to my expertise in data science, I have a strong background in Java and a deep understanding of data structures and algorithms (DSA). This combination allows me to develop efficient, scalable solutions and tackle complex computational problems</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">ITER, Sikhsha 'O' Anushandhan</li>
-            <li class="list-group-item">Computer Science and Engineering</li>
-          </ul>
-          <div class="card-body">
-            <a href="https://github.com/Kaibalya27" class="card-link" target="_blank">Github</a>
-            <a
-              href="https://www.linkedin.com/in/kaibalyamohapatra/"
-              class="card-link"
-              target="_blank"
-              >LinkedIn</a>
           </div>
         </div>
       </div>

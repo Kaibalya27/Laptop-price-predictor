@@ -62,17 +62,17 @@ https://laptop-price-predictor-1-teve.onrender.com
 ## Our Team
 If you have any inquiries or encounter any issues, feel free to reach out. Our team is here to assist you and ensure you have a good experience. Don't hesitate to contact us with any concerns or feedback.
 
+### Kaibalya Mohapatra 
+
+<a href="https://www.linkedin.com/in/kaibalyamohapatra/"><img align="left" src="https://github.com/user-attachments/assets/91a936a6-0a68-4523-b9dc-3657749246e8" alt="icon | LinkedIn" width="21px"/></a>
+<a href="https://github.com/Kaibalya27"><img align="left" src="https://github.com/user-attachments/assets/8521e6ca-c203-4c98-a510-1ed549610e10" alt="github icon" width="21px"/></a>
+<br><br>
+
 
 ### Shreya Tripathy
 
 <a href="https://www.linkedin.com/in/shreyatripathy7"><img align="left" src="https://github.com/user-attachments/assets/91a936a6-0a68-4523-b9dc-3657749246e8" alt="icon | LinkedIn" width="21px"/></a>
 <a href="https://github.com/Shreya7tripathy"><img align="left" src="https://github.com/user-attachments/assets/8521e6ca-c203-4c98-a510-1ed549610e10" alt="github icon" width="21px"/></a>
-<br><br>
-
-### Kaibalya Mohapatra 
-
-<a href="https://www.linkedin.com/in/kaibalyamohapatra/"><img align="left" src="https://github.com/user-attachments/assets/91a936a6-0a68-4523-b9dc-3657749246e8" alt="icon | LinkedIn" width="21px"/></a>
-<a href="https://github.com/Kaibalya27"><img align="left" src="https://github.com/user-attachments/assets/8521e6ca-c203-4c98-a510-1ed549610e10" alt="github icon" width="21px"/></a>
 <br><br>
 
 

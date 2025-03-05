@@ -82,15 +82,6 @@ If you have any inquiries or encounter any issues, feel free to reach out. Our t
 <a href="https://github.com/mavricx"><img align="left" src="https://github.com/user-attachments/assets/8521e6ca-c203-4c98-a510-1ed549610e10" alt="github icon" width="21px"/></a>
 <br><br>
 
-### Saurav lipsit Parija
-
-<a href="https://www.linkedin.com/in/saurav-lipsit-parija-870828290/"><img align="left" src="https://github.com/user-attachments/assets/91a936a6-0a68-4523-b9dc-3657749246e8" alt="icon | LinkedIn" width="21px"/></a>
-<a href="https://github.com/sauravlipsit"><img align="left" src="https://github.com/user-attachments/assets/8521e6ca-c203-4c98-a510-1ed549610e10" alt="github icon" width="21px"/></a>
-<br><br>
-
-
-
-
 
 
 
